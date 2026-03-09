@@ -567,7 +567,7 @@
         </control>
     </include>
 
-    <include name="View_523_Showcase_Lovefilm_Item">
+    <!-- <include name="View_523_Showcase_Lovefilm_Item">
         <control type="group">
             <centerleft>50%</centerleft>
             <width>1760</width>
@@ -654,6 +654,6 @@
                 </control>
             </control>
         </control>
-    </include>
+    </include> -->
 
 </includes>

@@ -165,7 +165,7 @@
         <param name="iconheight" default="item_icon_height" />
         <param name="icononlyheight" default="100%" />
         <param name="labelinclude" default="View_51_Wall_Label" />
-        <param name="aspectratio" default="scale" />
+        <param name="aspectratio" default="stretch" />
         <param name="clearlogo" default="false" />
         <param name="circle" default="false" />
         <param name="diffuse" default="diffuse/poster-wall.png" />
@@ -272,7 +272,7 @@
         <param name="iconheight" default="item_icon_height" />
         <param name="icononlyheight" default="100%" />
         <param name="labelinclude" default="View_512_Wall_Label" />
-        <param name="aspectratio" default="scale" />
+        <param name="aspectratio" default="stretch" />
         <param name="diffuse" default="diffuse/poster-wall.png" /> <!-- FIX ME -->
         <param name="stretchsides" default="Control.IsVisible(512) + !Window.IsVisible(home) + !$EXP[Exp_IsPluginAdvancedLauncher]" />
         <definition>
@@ -381,7 +381,7 @@
         <param name="controllayout" default="View_Standard" />
         <param name="orientation" default="vertical" />
         <param name="visible" default="true" />
-        <param name="aspectratio" default="scale" />
+        <param name="aspectratio" default="stretch" />
         <param name="viewtype" default="$LOCALIZE[31415]" />
         <param name="viewtypename" default="icon" />
         <param name="forced" default="false" />
@@ -535,17 +535,17 @@
         </control>
     </include>
 
-    <include name="View_514_Wall_Info_Layout">
+    <!-- <include name="View_514_Wall_Info_Layout">
         <top>-15</top>
         <include>View_Wall_FlipSides</include>
         <preloaditems>2</preloaditems>
         <pagecontrol>60</pagecontrol>
         <oninfo condition="ListItem.IsCollection">ActivateWindow(1140)</oninfo>
-    </include>
+    </include> -->
 
-    <include name="View_514_Wall_Info">
+    <!-- <include name="View_514_Wall_Info">
         <control type="group">
-            <include>View_Group</include>
+             <include>View_Group</include>
             <visible>Control.IsVisible(514)</visible>
             <include content="View_51_Wall_Container">
                 <param name="id" value="514" />
@@ -565,9 +565,9 @@
                 <param name="plot" value="$INFO[ListItem.Plot]" />
             </include>
         </control>
-    </include>
+    </include> -->
 
-    <include name="View_516_Wall_Info_2">
+    <!-- <include name="View_516_Wall_Info_2">
         <control type="group">
             <include>View_Group</include>
             <visible>Control.IsVisible(516)</visible>
@@ -590,7 +590,7 @@
                 <param name="isView2" value="true" />>
             </include>
         </control>
-    </include>
+    </include> -->
 
     <include name="View_515_Wall_Landscape_Small">
         <control type="group">

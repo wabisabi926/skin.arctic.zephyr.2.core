@@ -11,7 +11,9 @@ liquidskin
 - Fix old 'xbmx' <action></action> entries in \shortcuts\powermenu.DATA
 - Add 'Play Disc' in strings.po
 - Change 'Play DVD' to 'Play Disc' in '\shortcuts\mainmenu.DATA'
-
+- Change <constant name="view_poster_height">810</constant> in '\xml\Constants_Main.xml' to 840 so poster ratio matches 1500x1000, etc
+- Comment out viewtypes in the '\xml\Includes_View_....' files to simplify selection to traditional viewtypes only (list, poster, etc)
+- Change aspect ratios in the '\xml\Includes_View_....' files so posters no longer get cropped
 
 
 jurialmunkey

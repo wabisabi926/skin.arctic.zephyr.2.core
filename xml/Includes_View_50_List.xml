@@ -46,7 +46,7 @@
         </control>
     </include>
 
-    <include name="View_501_List_MediaInfo">
+    <!-- <include name="View_501_List_MediaInfo">
         <control type="group">
             <visible>Control.IsVisible(501)</visible>
             <include>View_Group</include>
@@ -67,9 +67,9 @@
                 <param name="plot" value="$INFO[ListItem.Plot]" />
             </include>
         </control>
-    </include>
+    </include> -->
 
-    <include name="View_502_List_MediaInfo_Extended">
+    <!-- <include name="View_502_List_MediaInfo_Extended">
         <control type="group">
             <visible>Control.IsVisible(502)</visible>
             <include>View_Group</include>
@@ -85,7 +85,7 @@
             </include>
             <include>View_502_List_Info</include>
         </control>
-    </include>
+    </include> -->
 
     <include name="View_503_List_Banners">
         <control type="group">
@@ -97,8 +97,9 @@
                 <width>1790</width>
                 <top>-15</top>
                 <left>-15</left>
-                <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | $EXP[Exp_IsPluginAdvancedLauncher]</visible>
-                <height>840</height>
+                <visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | $EXP[Exp_IsPluginAdvancedLauncher]</visible>
+				<!-- <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | $EXP[Exp_IsPluginAdvancedLauncher]</visible> -->              
+				<height>840</height>
                 <include>View_Vertical</include>
                 <movement>2</movement>
                 <focusposition>2</focusposition>
@@ -162,7 +163,7 @@
                                 <top>30</top>
                                 <bottom>30</bottom>
                                 <width>25%</width>
-                                <aspectratio align="right" aligny="center">keep</aspectratio>
+                                <aspectratio align="right" aligny="center">scale</aspectratio>
                                 <texture>$VAR[Image_ClearLogo]</texture>
                                 <visible>String.IsEmpty(ListItem.Art(tvshow.banner)) + String.IsEmpty(ListItem.Art(banner))</visible>
                             </control>
@@ -300,7 +301,7 @@
         </control>
     </include>
 
-    <include name="View_504_List_TriPanel">
+    <!-- <include name="View_504_List_TriPanel">
         <control type="group">
             <visible>Control.IsVisible(504)</visible>
             <include>View_Group</include>
@@ -334,7 +335,7 @@
                 </control>
             </control>
         </control>
-    </include>
+    </include> -->
 
     <include name="View_504_Info">
         <definition>
@@ -626,8 +627,7 @@
                     <textcolor>$PARAM[fgcolor]_100</textcolor>
                     <selectedcolor>$PARAM[fgcolor]_100</selectedcolor>
                     <label>$VAR[Label_List_Title]</label>
-                    >
-                </control>
+				</control>
                 <control type="label">
                     <align>right</align>
                     <textcolor>$PARAM[fgcolor]_100</textcolor>
@@ -1023,7 +1023,7 @@
                     </include>
                     <include content="Object_Poster">
                         <param name="icon" value="$PARAM[icon]" />
-                        <param name="aspectratio" value="$PARAM[aspectratio]" />
+                        <param name="aspectratio" value="stretch" />
                         <param name="diffuse" value="$PARAM[diffuse]" />
                         <param name="fadetime" value="$PARAM[fadetime]" />
                         <param name="visible" value="$PARAM[iconvisible]" />
