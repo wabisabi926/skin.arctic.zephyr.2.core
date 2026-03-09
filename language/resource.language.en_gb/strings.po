@@ -805,7 +805,7 @@ msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31162"
-msgid "Backup and Restore"
+msgid "Reset Skin"
 msgstr ""
 
 #: /shortcuts/overrides.xml

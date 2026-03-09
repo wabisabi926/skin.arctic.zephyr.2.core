@@ -105,7 +105,7 @@
                         <altlabel>[COLOR=Selected]$LOCALIZE[24996][/COLOR]</altlabel>
                     </control>
 
-                    <control type="togglebutton" id="9009" description="Reset Backup">
+                    <control type="togglebutton" id="9009" description="Reset">
                         <onfocus>SetProperty(CurrentFocus,$NUMBER[9009])</onfocus>
                         <usealttexture>!Control.HasFocus(300) + Integer.IsEqual(Window.Property(CurrentFocus),9009)</usealttexture>
                         <alttexturenofocus colordiffuse="$VAR[Defs_Settings_ToggleButton_Color]">common/white.png</alttexturenofocus>
@@ -892,7 +892,7 @@
                         <selected>System.HasAddon(script.skin.helper.colorpicker)</selected>
                         <include>Defs_Settings_Button</include>
                     </control>
-                    <control type="radiobutton" id="19804">
+                    <!-- <control type="radiobutton" id="19804">
                         <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                         <label>script.skin.helper.skinbackup</label>
                         <label2>$INFO[System.AddonVersion(script.skin.helper.skinbackup)]        </label2>
@@ -900,7 +900,7 @@
                         <onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
                         <selected>System.HasAddon(script.skin.helper.skinbackup)</selected>
                         <include>Defs_Settings_Button</include>
-                    </control>
+                    </control> -->
                     <control type="radiobutton" id="19805">
                         <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                         <label>script.module.metadatautils</label>
@@ -1081,7 +1081,7 @@
                         <include>Dialog_Standard_HintLabel</include>
                         <label>$LOCALIZE[31162]</label>
                     </control>
-                    <control type="button" id="19901" description="Backup">
+                    <!-- <control type="button" id="19901" description="Backup">
                         <visible>Integer.IsEqual(Window.Property(CurrentFocus),9009)</visible>
                         <include>Defs_Settings_Button</include>
                         <label>$LOCALIZE[31031]</label>
@@ -1098,9 +1098,8 @@
                         <include>Defs_Settings_Button</include>
                         <label>$LOCALIZE[31034]</label>
                         <onclick>Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
-                        <onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-                        
-                    </control>
+                        <onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>                       
+                    </control> -->
                     <control type="button" id="19904" description="Reset">
                         <visible>Integer.IsEqual(Window.Property(CurrentFocus),9009)</visible>
                         <include>Defs_Settings_Button</include>

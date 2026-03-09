@@ -1,5 +1,10 @@
 liquidskin
 
+0.9.62
+- Comment out 'script.skin.helper.skinbackup' addon from 'Manage Dependencies' list in \xml\SkinSettings.xml (addon not supported in Kodi Omega)
+- Comment out backup and restore options from '\xml\SkinSettings.xml' and update relevant labels
+- Update strings.po 
+
 0.9.61
 - Update addon.xml structure
 - Rename '1080i' folder to 'xml'
