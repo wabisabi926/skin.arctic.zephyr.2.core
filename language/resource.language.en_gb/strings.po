@@ -162,7 +162,7 @@ msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31030"
-msgid "Backup / Restore"
+msgid "Reset"
 msgstr ""
 
 #: /1080i/SkinSettings.xml
@@ -1485,4 +1485,9 @@ msgstr ""
 #: /1080i/Includes_View_51_Wall.xml
 msgctxt "#31436"
 msgid "Info Wall 2"
+msgstr ""
+
+#: /shortcuts/mainmenu.DATA.xml
+msgctxt "#31437"
+msgid "Play Disc"
 msgstr ""

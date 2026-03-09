@@ -5,6 +5,12 @@ liquidskin
 - Rename '1080i' folder to 'xml'
 - Update 'LICENSE' file
 - Move 'icon.png' and 'fanart.jpg' to \resources\ folder
+- Reorder entries in \shortcuts\mainmenu.DATA
+- Reorder entries in \shortcuts\powermenu.DATA
+- Fix old 'xbmx' <action></action> entries in \shortcuts\mainmenu.DATA
+- Fix old 'xbmx' <action></action> entries in \shortcuts\powermenu.DATA
+- Add 'Play Disc' in strings.po
+- Change 'Play DVD' to 'Play Disc' in '\shortcuts\mainmenu.DATA'
 
 
 
