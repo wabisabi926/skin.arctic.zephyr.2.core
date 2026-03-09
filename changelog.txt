@@ -1,5 +1,20 @@
+liquidskin
+
+0.9.61
+- Update addon.xml structure
+- Rename '1080i' folder to 'xml'
+- Update 'LICENSE' file
+- Move 'icon.png' and 'fanart.jpg' to \resources\ folder
+
+
+
+jurialmunkey
+
+0.9.60
+-
+
 0.9.59
- - Add Video View 'Info Wall 2'
+- Add Video View 'Info Wall 2'
 
 0.9.58
 - Fix Icon Wall View to remove stretch for Advanced Emulator Launcher
