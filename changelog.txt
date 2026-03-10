@@ -1,5 +1,12 @@
 liquidskin
 
+0.9.64
+- Fix preview image in skin blur settings not showing
+
+0.9.63
+- Create README.md
+- Update required addons
+
 0.9.62
 - Comment out 'script.skin.helper.skinbackup' addon from 'Manage Dependencies' list in \xml\SkinSettings.xml (addon not supported in Kodi Omega)
 - Comment out backup and restore options from '\xml\SkinSettings.xml' and update relevant labels
