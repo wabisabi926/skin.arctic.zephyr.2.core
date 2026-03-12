@@ -647,7 +647,7 @@
         <param name="label2" default="$INFO[ListItem.Label]" />
         <param name="country" default="false" />
         <param name="studio" default="false" />
-        <param name="clearlogo" default="false" />
+        <!-- <param name="clearlogo" default="false" /> -->
         <param name="overlaytext" default="String.IsEmpty(ListItem.Icon)" />
         <definition>
             <control type="group">
@@ -721,7 +721,7 @@
                     <param name="fallback" value="$PARAM[fallback]" />
                     <param name="country" value="$PARAM[country]" />
                     <param name="studio" value="$PARAM[studio]" />
-                    <param name="clearlogo" value="$PARAM[clearlogo]" />
+                    <!-- <param name="clearlogo" value="$PARAM[clearlogo]" /> -->
                     <param name="label2" value="$PARAM[label2]" />
                     <param name="overlaytext" value="$PARAM[overlaytext]" />
                     <param name="diffuse" value="$PARAM[diffuse]" />
@@ -735,7 +735,7 @@
                     <param name="fallback" value="$PARAM[fallback]" />
                     <param name="country" value="$PARAM[country]" />
                     <param name="studio" value="$PARAM[studio]" />
-                    <param name="clearlogo" value="$PARAM[clearlogo]" />
+                    <!-- <param name="clearlogo" value="$PARAM[clearlogo]" /> -->
                     <param name="label2" value="$PARAM[label2]" />
                     <param name="overlaytext" value="$PARAM[overlaytext]" />
                     <param name="diffuse" value="$PARAM[diffuse]" />

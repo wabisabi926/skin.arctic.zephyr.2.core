@@ -1,8 +1,7 @@
-<addon id="skin.arctic.zephyr.2.liquid" name="Arctic Zephyr 2 liquid" provider-name="jurialmunkey - liquidskin" version="0.9.64">
+<addon id="skin.arctic.zephyr.2.liquid" name="Arctic Zephyr 2 liquid" provider-name="jurialmunkey - liquidskin" version="0.9.65">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skin.helper.colorpicker" version="2.0.3" />
-        <import addon="script.toolbox" version="2.0.0" />
         <import addon="script.colorbox" version="2.0.8" />		
         <import addon="script.skinshortcuts" version="0.4.0" />
         <import addon="script.image.resource.select" version="0.0.5" />

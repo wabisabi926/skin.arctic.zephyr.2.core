@@ -174,34 +174,93 @@
         <!-- Global Widget -->
         <include>skinshortcuts-template-global</include>
 
-        <!-- Background -->
-        <control type="multiimage" id="7975">
-            <left>-2160</left>
-            <width>1</width>
-            <height>1</height>
-            <include>Defs_TimePerImage</include>
-            <randomize>true</randomize>
-            <fadetime>600</fadetime>
-            <imagepath background="true">$VAR[Global_Background_Image_Var]</imagepath>
-            <visible>System.HasAddon(script.colorbox)</visible>
-            <visible>Skin.HasSetting(EnableBlur)</visible>
-        </control>
-        <include condition="Skin.HasSetting(global.showvideo)">Global_Videowindow</include>
-        <include condition="Skin.HasSetting(global.showvisualisation)">Global_Visualisation</include>
-        <control type="multiimage">
-            <include>Defs_TimePerImage</include>
-            <randomize>true</randomize>
-            <width>1920</width>
-            <height>1080</height>
-            <aspectratio>scale</aspectratio>
-            <fadetime>600</fadetime>
-            <imagepath background="true">$VAR[Global_Background_Image]</imagepath>
-            <visible>$EXP[Exp_GlobalBackground]</visible>
-            <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(KenBurnsEffect)">Conditional</animation>
-            <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(KenBurnsEffect)">Conditional</animation>
-        </control>
-
-        <control type="image">
+        <!-- Background -->		
+		<control type="multiimage" id="7975">
+			<left>-2160</left>
+			<width>1</width>
+			<height>1</height>
+			<include>Defs_TimePerImage</include>
+			<randomize>true</randomize>
+			<fadetime>600</fadetime>
+			<imagepath background="true">$VAR[Global_Background_Image_Var]</imagepath>
+			<visible>System.HasAddon(script.colorbox)</visible>
+			<visible>Skin.HasSetting(EnableBlur)</visible>
+		</control>
+		<include condition="Skin.HasSetting(global.showvideo)">Global_Videowindow</include>
+		<include condition="Skin.HasSetting(global.showvisualisation)">Global_Visualisation</include>				
+		<control type="multiimage">
+			<include>Defs_TimePerImage</include>
+			<randomize>true</randomize>
+			<width>1920</width>
+			<height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>600</fadetime>
+			<imagepath background="true">$VAR[Global_Background_Image]</imagepath>
+			<visible>$EXP[Exp_GlobalBackground]</visible>
+			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(KenBurnsEffect)">Conditional</animation>
+			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(KenBurnsEffect)">Conditional</animation>
+		</control>	
+		<control type="image">
+			<texture colordiffuse="HomePanel">common/bg.jpg</texture>
+			<visible>$EXP[Exp_GlobalBackground]</visible>				
+		</control>			
+		<control type="grouplist">
+			<top>400</top>
+			<left>view_pad</left>
+			<right>view_pad</right>
+			<orientation>vertical</orientation>
+			<itemgap>20</itemgap>
+			<usecontrolcoords>true</usecontrolcoords>
+			<fadetime>600</fadetime>
+			<visible>$EXP[Exp_GlobalBackground]</visible>
+			<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(302) | Control.HasFocus(5600) | Control.HasFocus(5610)" reversible="false">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" condition="![Control.HasFocus(302) | Control.HasFocus(5600) | Control.HasFocus(5610)]" reversible="false">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="300">WindowOpen</animation>				
+			<control type="label">
+				<align>center</align>
+				<font>font_byline</font>
+				<textcolor>main_fg_30</textcolor>
+				<label fallback="31105">$INFO[Container(301).ListItem.Property(widgetName.backgroundWidget)]</label>
+				<height>30</height>
+			</control>
+			<control type="label">
+				<aligny>top</aligny>
+				<align>center</align>
+				<font>font_title</font>
+				<textcolor>main_fg_30</textcolor>
+				<label>$INFO[Container(5600).ListItem.Label,[B],[/B]]</label>
+				<height>85</height>
+			</control>				
+		</control>			
+		<control type="image">
+			<posx>20%</posx>
+			<posy>43%</posy>		
+			<width>24</width>
+			<height>24</height>
+			<texture flipx="false" colordiffuse="main_fg_30">buttons/spin-left.png</texture>
+			<fadetime>600</fadetime>
+			<visible>$EXP[Exp_GlobalBackground]</visible>
+			<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(302) | Control.HasFocus(5600) | Control.HasFocus(5610)" reversible="false">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" condition="![Control.HasFocus(302) | Control.HasFocus(5600) | Control.HasFocus(5610)]" reversible="false">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="300">WindowOpen</animation>		
+		</control>	
+		<control type="image">
+			<posx>80%</posx>
+			<posy>43%</posy>	
+			<width>24</width>
+			<height>24</height>
+			<texture flipx="false" colordiffuse="main_fg_30">buttons/spin-right.png</texture>
+			<fadetime>600</fadetime>
+			<visible>$EXP[Exp_GlobalBackground]</visible>
+			<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(302) | Control.HasFocus(5600) | Control.HasFocus(5610)" reversible="false">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" condition="![Control.HasFocus(302) | Control.HasFocus(5600) | Control.HasFocus(5610)]" reversible="false">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="300">WindowOpen</animation>		
+		</control>		
+		
+        <!-- <control type="image">
             <right>view_pad</right>
             <top>view_pad</top>
             <width>300</width>
@@ -211,7 +270,7 @@
             <visible>!Control.HasFocus(5610)</visible>
             <fadetime>200</fadetime>
             <visible>[String.IsEmpty(Skin.String(HomeBackgroundImage)) + String.IsEmpty(Container(301).ListItem.Property(Background)) + String.IsEmpty(Container(301).ListItem.Property(backgroundPlaylist))] | Control.HasFocus(5600)</visible>
-        </control>
+        </control> -->
 
         <control type="group">
             <top>900</top>
@@ -326,8 +385,22 @@
                         <param name="rt_prop" value="Window(Home).Property(ListItemHelper.rating.rottentomatoes.percent)" />
                         <param name="rt_audience_prop" value="Window(Home).Property(ListItemHelper.rating.rottentomatoes.audience)" />
                         <param name="oscar_prop" value="Window(Home).Property(ListItemHelper.awards)" />
-                    </include>
+                    </include>			
                 </control>
+				<control type="image">
+					<posx>20%</posx>
+					<posy>200</posy>					
+					<width>24</width>
+					<height>24</height>
+					<texture flipx="false" colordiffuse="main_fg_70">buttons/spin-left.png</texture>
+				</control>	
+				<control type="image">
+					<posx>80%</posx>
+					<posy>200</posy>					
+					<width>24</width>
+					<height>24</height>
+					<texture flipx="false" colordiffuse="main_fg_70">buttons/spin-right.png</texture>
+				</control>					
             </control>
             <!-- Down Widget -->
             <control type="group">
@@ -908,7 +981,7 @@
     </include>
 
     <include name="Home_Multi_Horizontal">
-        <include>Global_Background</include>
+        <!-- <include>Global_Background</include> -->
         <include condition="Skin.HasSetting(HomeIcons)">Home_Horizontal_Icons</include>
         <control type="group">
             <top>30</top>

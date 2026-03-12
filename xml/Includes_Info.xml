@@ -161,7 +161,7 @@
                 <label>$INFO[ListItem.Property(tagline)]</label>
                 <font>font_info_display</font>
             </control>
-            <control type="image">
+            <!-- <control type="image">
                 <top>390</top>
                 <right>0</right>
                 <width>700</width>
@@ -169,7 +169,7 @@
                 <texture background="true">$INFO[ListItem.Property(clearlogo)]</texture>
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <visible>!String.IsEmpty(ListItem.Property(clearlogo))</visible>
-            </control>
+            </control> -->
         </control>
     </include>
 

@@ -101,7 +101,7 @@
                         <param name="side" value="OSD_RightSide" />
                     </include>
 
-                    <control type="group">
+                    <!-- <control type="group">
                         <include condition="Skin.HasSetting(DisableMusicOSDClearLogo)">OSD_Right580</include>
                         <include condition="!Skin.HasSetting(DisableMusicOSDArtistImage) + !Skin.HasSetting(DisableMusicOSDClearLogo)">OSD_Right340</include>
                         <include condition="Skin.HasSetting(DisableMusicOSDArtistImage) + !Skin.HasSetting(DisableMusicOSDClearLogo)">OSD_RightSide</include>
@@ -113,7 +113,7 @@
                             <height>126</height>
                             <aspectratio align="right" aligny="bottom">keep</aspectratio>
                             <texture>$INFO[Player.Art(albumartist.clearlogo)]</texture>
-                        </control>
+                        </control> -->
 
                         <control type="progress" id="401">
                             <left>340</left>

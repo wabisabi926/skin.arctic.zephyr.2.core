@@ -62,7 +62,7 @@
                 <visible>!String.IsEmpty(ListItem.Art(discart))</visible>
                 <icon>$INFO[ListItem.Art(discart)]</icon>
                 <property name="discart">$INFO[ListItem.Art(discart)]</property>
-                <property name="clearlogo">$INFO[ListItem.Art(clearlogo)]</property>
+                <!-- <property name="clearlogo">$INFO[ListItem.Art(clearlogo)]</property> -->
                 <property name="tagline">$INFO[ListItem.Tagline]</property>
             </item>
         </content>
@@ -645,7 +645,7 @@
                 <onclick condition="!String.IsEqual(Playlist.Length(music),0) + !String.IsEqual(Playlist.Length(video),0)">SetProperty(Dialog.1.BuiltIn,ActivateWindow(musicplaylist))</onclick>
                 <onclick condition="!String.IsEqual(Playlist.Length(music),0) + !String.IsEqual(Playlist.Length(video),0)">SetProperty(Dialog.2.Label,$LOCALIZE[31396])</onclick>
                 <onclick condition="!String.IsEqual(Playlist.Length(music),0) + !String.IsEqual(Playlist.Length(video),0)">SetProperty(Dialog.2.BuiltIn,ActivateWindow(videoplaylist))</onclick>
-                <onclick condition="!String.IsEqual(Playlist.Length(music),0) + !String.IsEqual(Playlist.Length(video),0)">RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[524])</onclick>
+                <!-- not sure what this relates to? --> <!-- <onclick condition="!String.IsEqual(Playlist.Length(music),0) + !String.IsEqual(Playlist.Length(video),0)">RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[524])</onclick> -->
                 <visible>!String.IsEqual(Playlist.Length(music),0) | !String.IsEqual(Playlist.Length(video),0)</visible> 
             </item>
             <!-- Fullscreen -->

@@ -18,11 +18,11 @@
                 <onclick>ActivateWindow(videos,$INFO[Container(5600).ListItem.DBID,videodb://movies/sets/,/],return)</onclick>
                 <include content="View_TopItems">
                     <param name="id" value="5600" />
-                    <param name="icon" value="$INFO[ListItem.Art(clearlogo)]" />
+                    <!-- <param name="icon" value="$INFO[ListItem.Art(clearlogo)]" /> -->
                     <param name="fallback" value="" />
                     <param name="bordersize" value="-64" />
                     <param name="itemwidth" value="item_square_width" />
-                    <param name="clearlogo" value="true" />
+                    <!-- <param name="clearlogo" value="true" /> -->
                     <param name="itemlayout" value="View_TopItems_Decades_Itemlayout" />
                     <param name="overlaytext" value="true" />
                     <param name="label2" value="" />
