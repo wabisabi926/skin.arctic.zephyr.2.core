@@ -89,7 +89,7 @@
             <visible>!Control.HasFocus(300) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SettingsProfile.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(eventlog) | Window.IsVisible(SettingsSystemInfo.xml)</visible>
             <visible>[Skin.HasSetting(EnableClearlogo) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))]</visible>
         </control>
-        <control type="image">
+        <!-- <control type="image">
             <visible>$PARAM[visible]</visible>
             <visible>Skin.HasSetting(EnableClearlogo)</visible>
             <texture background="true">$VAR[Image_TopBar_ClearLogo]</texture>
@@ -99,7 +99,7 @@
             <centertop>50%</centertop>
             <centerleft>50%</centerleft>
             <visible>!Control.HasFocus(300) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SettingsProfile.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(eventlog) | Window.IsVisible(SettingsSystemInfo.xml)</visible>
-        </control>
+        </control> -->
     </include>
     <include name="Topbar_Right">
         <control type="grouplist">

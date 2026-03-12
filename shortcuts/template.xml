@@ -488,7 +488,7 @@
         </controls>
     </other>
 
-    <other include="global">
+    <other include="global">	
         <property name="widgetTarget" tag="property" attribute="name|widgetTarget.backgroundWidget" />
         <property name="widgetPath" tag="property" attribute="name|widgetPath.backgroundWidget" />
         <property name="widgetTarget">$INFO[Skin.String(widgetTarget)]</property>

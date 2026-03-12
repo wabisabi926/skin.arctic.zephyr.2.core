@@ -1,5 +1,17 @@
 liquidskin
 
+0.9.65
+- Comment out all code relating to Clearlogo
+- Add Movie title, etc to 'Basic' home layout global widget background (instead of clearlogo)
+- Add left and right arrows to 'Basic' home layout global widget (to aid navigation)
+
+0.9.64
+- Remove 'script.toolbox' from required addons
+- Comment out 'script.toolbox' addon from 'Manage Dependencies' list in \xml\SkinSettings.xml (addon broken for Kodi Omega)
+- Comment out all code relating to 'script.toolbox' (mainly relating to the 'Fallback image' skin setting options)
+- Comment out 'Fallback image' skin setting options in \xml\SkinSettings.xml
+- Comment out redundant skin options (Settings/Skin/Library - Viewtypes) in \xml\SkinSettings.xml
+
 0.9.64
 - Fix preview image in skin blur settings not showing
 

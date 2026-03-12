@@ -567,7 +567,7 @@ msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31113"
-msgid "Global widget"
+msgid "Global Spotlight widget"
 msgstr ""
 
 msgctxt "#31114"

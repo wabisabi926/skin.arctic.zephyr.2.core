@@ -166,7 +166,7 @@
         <param name="icononlyheight" default="100%" />
         <param name="labelinclude" default="View_51_Wall_Label" />
         <param name="aspectratio" default="stretch" />
-        <param name="clearlogo" default="false" />
+        <!-- <param name="clearlogo" default="false" /> -->
         <param name="circle" default="false" />
         <param name="diffuse" default="diffuse/poster-wall.png" />
         <definition>
@@ -238,7 +238,7 @@
                     <param name="selectbox" value="$PARAM[selectbox]" />
                 </include>
 
-                <control type="group">
+                <!-- <control type="group">
                     <height>$PARAM[iconheight]</height>
                     <control type="image">
                         <right>30</right>
@@ -248,7 +248,7 @@
                         <texture>$VAR[Image_ClearLogo]</texture>
                         <visible>$PARAM[clearlogo]</visible>
                     </control>
-                </control>
+                </control> -->
             </control>
         </definition>
     </include>
@@ -409,7 +409,7 @@
                         <param name="id" value="$PARAM[id]" />
                         <param name="aspectratio" value="$PARAM[aspectratio]" />
                         <param name="diffuse" value="$PARAM[diffuse]" />
-                        <param name="clearlogo" value="$PARAM[clearlogo]" />
+                        <!-- <param name="clearlogo" value="$PARAM[clearlogo]" /> -->
                         <param name="circle" value="$PARAM[circle]" />
                         <param name="label2" value="$PARAM[label2]" />
                         <param name="colordiffuse" value="$PARAM[colordiffuse_nf]" />
@@ -426,7 +426,7 @@
                         <param name="aspectratio" value="$PARAM[aspectratio]" />
                         <param name="focusbounce" value="$PARAM[focusbounce]" />
                         <param name="diffuse" value="$PARAM[diffuse]" />
-                        <param name="clearlogo" value="$PARAM[clearlogo]" />
+                        <!-- <param name="clearlogo" value="$PARAM[clearlogo]" /> -->
                         <param name="circle" value="$PARAM[circle]" />
                         <param name="label2" value="$PARAM[label2]" />
                         <param name="colordiffuse" value="$PARAM[colordiffuse_fo]" />
@@ -481,7 +481,7 @@
                 <param name="itemwidth" value="item_landscape_width" />
                 <param name="itemheight" value="item_row_height" />
                 <param name="icon" value="$VAR[Image_Landscape]" />
-                <param name="clearlogo" value="[!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + [[String.IsEmpty(ListItem.Art(landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape))] | [[!String.IsEmpty(ListItem.Art(tvshow.landscape)) | !String.IsEmpty(ListItem.Art(landscape))] + !Skin.HasSetting(LandscapeArt)] | [!String.IsEmpty(ListItem.Art(thumb)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,video)] + String.IsEmpty(ListItem.Property(airday))]]" />
+                <!-- <param name="clearlogo" value="[!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + [[String.IsEmpty(ListItem.Art(landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape))] | [[!String.IsEmpty(ListItem.Art(tvshow.landscape)) | !String.IsEmpty(ListItem.Art(landscape))] + !Skin.HasSetting(LandscapeArt)] | [!String.IsEmpty(ListItem.Art(thumb)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,video)] + String.IsEmpty(ListItem.Property(airday))]]" /> -->
                 <param name="iconheight" value="item_icon_height" />
                 <param name="diffuse" value="diffuse/landscape-wall.png" />
                 <param name="viewtype" value="$LOCALIZE[31359]" />
@@ -603,7 +603,7 @@
                 <param name="itemheight" value="275" />
                 <param name="icon" value="$VAR[Image_Landscape]" />
                 <param name="aspectratio" value="scale" />
-                <param name="clearlogo" value="[!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + [[String.IsEmpty(ListItem.Art(landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape))] | [[!String.IsEmpty(ListItem.Art(tvshow.landscape)) | !String.IsEmpty(ListItem.Art(landscape))] + !Skin.HasSetting(LandscapeArt)] | [!String.IsEmpty(ListItem.Art(thumb)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,video)] + String.IsEmpty(ListItem.Property(airday))]]" />
+                <!-- <param name="clearlogo" value="[!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + [[String.IsEmpty(ListItem.Art(landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape))] | [[!String.IsEmpty(ListItem.Art(tvshow.landscape)) | !String.IsEmpty(ListItem.Art(landscape))] + !Skin.HasSetting(LandscapeArt)] | [!String.IsEmpty(ListItem.Art(thumb)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,video)] + String.IsEmpty(ListItem.Property(airday))]]" /> -->
                 <param name="iconheight" value="260.625" />
                 <param name="diffuse" value="diffuse/landscape-small-wall.png" />
                 <param name="viewtype" value="$LOCALIZE[31431]" />
