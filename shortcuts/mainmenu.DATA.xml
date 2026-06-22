@@ -56,7 +56,8 @@
         <label2>31437</label2>
         <icon>DefaultDVDFull.png</icon>
         <thumb />
-        <action>PlayDVD()</action>
+        <action>PlayDisc</action>
+        <visible>System.HasMediaDVD</visible>		
     </shortcut>
     <shortcut>
         <label>5</label>
