@@ -1,4 +1,4 @@
-<addon id="skin.arctic.zephyr.2.core" name="Arctic: Zephyr 2 Core" provider-name="jurialmunkey - liquidskin" version="0.9.68">
+<addon id="skin.arctic.zephyr.2.core" name="Arctic: Zephyr 2 Core" provider-name="jurialmunkey - liquidskin" version="0.9.69">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />	
         <import addon="script.skinshortcuts" version="0.4.0" />

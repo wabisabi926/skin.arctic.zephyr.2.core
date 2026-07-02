@@ -1,6 +1,9 @@
 liquidskin
 Artic: Zephyr 2 Core
 
+0.9.69
+- Hide selection box color option
+
 0.9.68
 - Delete redundant dark color xml
 
