@@ -29,6 +29,8 @@
             <screenshot>resources/screenshot-06.jpg</screenshot>
         </assets>
         <summary lang="en_GB">Clean, minimal, elegant, simple, light.</summary>
-        <description lang="en_GB">Arctic: Zephyr 2 Core is a minimalistic skin, based off the original Arctic: Zephyr 2 created by jurialmunkey. The skin is designed to be simple so that the user can focus on their media content. In addition to the default light colour scheme, the skin also includes a number of darker variations.</description>		
+        <summary lang="zh_CN">简洁、简约、优雅、简单、轻盈。</summary>
+        <description lang="en_GB">Arctic: Zephyr 2 Core is a minimalistic skin, based off the original Arctic: Zephyr 2 created by jurialmunkey. The skin is designed to be simple so that the user can focus on their media content. In addition to the default light colour scheme, the skin also includes a number of darker variations.</description>
+        <description lang="zh_CN">Arctic: Zephyr 2 Core 是一款极简风格的皮肤，基于 jurialmunkey 创作的原版 Arctic: Zephyr 2。该皮肤设计简洁，让用户能够专注于他们的媒体内容。除了默认的浅色配色方案外，该皮肤还包含多种深色变体。</description>		
     </extension>
 </addon>
